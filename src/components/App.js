@@ -4,16 +4,24 @@ const App = () => {
   //code here
   const [ok, setok] = useState("OFF");
   const [No, setNo] = useState("ON");
-  const handleClick = (e) => {
-    if (e.target.id === "btn1") {
-      setok("NO");
-      setNo("OFF");
-    } else {
-      setok("OFF");
-      setNo("ON");
-    }
-  };
-
+  // const handleClick = (e) => {
+  //   if (e.target.id === "btn1") {
+  //     setok("NO");
+  //     setNo("OFF");
+  //   } else {
+  //     setok("OFF");
+  //     setNo("ON");
+  //   }
+  // };
+function handleClick(e){
+  if (e.target.id === "btn1") {
+    //     setok("NO");
+    //     setNo("OFF");
+    //   } else {
+    //     setok("OFF");
+    //     setNo("ON");
+    //   }
+}
   return (
     <div className="App">
       <button id="btn1" onClick={(e) => handleClick(e)}>
